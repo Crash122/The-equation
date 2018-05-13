@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp15
+namespace WindowsFormsApp16
 {
     public partial class Form1 : Form
     {
@@ -19,20 +19,19 @@ namespace WindowsFormsApp15
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Uranvnenie.Uravnenie(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text));
-            label9.Text = Uranvnenie.reshenie1();
-            label10.Text = Uranvnenie.reshenie2();
-            label8.Text = Uranvnenie.otvet();
+            S a= new S(int.Parse(textBox1.Text), int.Parse(textBox1.Text), int.Parse(textBox1.Text));
+            label2.Text = S.otvet();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-
+            
+         
         }
     }
 }
